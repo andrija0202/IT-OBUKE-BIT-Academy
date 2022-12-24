@@ -38,6 +38,8 @@
 //   return alphabetizedWords.join(" ");
 // }
 
+//KOMENTAR: Ovaj malkice doradi. Dobijes kao rezultat: Of Rbceilpu Sabeir, dakle red reci nije dobar, ali je ostalo dobro ;)
+
 // console.log(alphabetize("Republic Of Serbia"));
 
 //4. Write a function to split a string and convert it into an array of words.
@@ -82,6 +84,8 @@
 
 //   return result1;
 // }
+
+//KOMENTAR: Jesi li ovaj pokusao da uradis na dva nacina ili...? Jer drugi nacin ti je dobar, prvi znas da ne radi :)
 
 // console.log(sum("56745", "123", "l"));
 
