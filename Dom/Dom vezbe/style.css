@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+img {
+  width: 100%;
+}
+
+.bgAll {
+  background-color: navy;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  padding: 15px;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+
+.btnOff {
+  padding: 15px;
+  background-color: orange;
+  color: white;
+  cursor: pointer;
+}
+
+.bgAllYellow {
+  background-color: yellow;
+}
+
+.chatRoom {
+  background-color: rgb(194, 189, 189);
+  padding: 20px;
+  display: flex;
+  gap: 50px;
+  height: 580px;
+}
+
+.leftSideWrap,
+.rightSideWrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form1,
+.form2 {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  width: 100%;
+}
+
+.mainInput1,
+.mainInput2 {
+  width: 100%;
+}
+
+.mainBtn1,
+.mainBtn2 {
+  background-color: brown;
+  padding: 5px 100px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.leftSide,
+.rightSide {
+  background-color: rgb(231, 227, 227);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.item {
+  padding: 10px;
+  margin: 20px;
+  background-color: white;
+}
+
+.hidden {
+  display: none;
+}
+/* -----------------------------------------------
+ */
+.img-field {
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.soccer-img {
+  width: 100%;
+  height: 800px;
+  position: relative;
+  z-index: 1;
+}
+
+.soccer-player {
+  width: 100px;
+  height: 150px;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
+
+.btn-stop {
+  padding: 10px;
+  background-color: crimson;
+  color: white;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+  bottom: 5px;
+  right: 5px;
+}
+
+/* ------------------------------------------ */
+
+/* Super Mario */
+
+.map {
+  position: relative;
+  display: flex;
+  /* width: 200vw; */
+  overflow: hidden;
+}
+
+.mario {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  z-index: 2;
+  left: 40%;
+  bottom: 18%;
+}
+
+.road {
+  width: 200vw;
+  height: 100vh;
+}
