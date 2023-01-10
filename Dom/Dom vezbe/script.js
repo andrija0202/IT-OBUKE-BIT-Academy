@@ -25,29 +25,32 @@ const rightSideForm = document.querySelector(".rightSide");
 const novo = document.querySelector(".novo");
 // let proba = input1.value;
 // console.log(item);
-// let newP = (document.createElement("p").textContent = item);
+// let newP = document.createElement("p");
 // newP.textContent = "Nesto novo";
+let newP;
 
 // console.log(itemsArray);
 
 btn1.addEventListener("click", (e) => {
+  debugger;
   var input1 = document.querySelector(".mainInput1").value;
 
   items.forEach((item) => {
     if (item.textContent === input1) {
-      let newP = (document.createElement("p").textContent = item);
+      // let newP = (document.createElement("p").textContent = item);
 
+      newP = item;
       rightSideForm.append(newP);
     }
   });
 });
 
 btn2.addEventListener("click", (e) => {
-  var input2 = document.querySelector(".mainInput1").value;
+  var input2 = document.querySelector(".mainInput2").value;
 
   items.forEach((item) => {
     if (item.textContent === input2) {
-      let newP = (document.createElement("p").textContent = item);
+      newP = document.createElement("p").textContent = item;
 
       leftSideForm.append(newP);
     }
