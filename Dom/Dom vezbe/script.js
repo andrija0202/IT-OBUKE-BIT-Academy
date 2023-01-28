@@ -32,7 +32,7 @@ let newP;
 // console.log(itemsArray);
 
 btn1.addEventListener("click", (e) => {
-  debugger;
+  // debugger;
   var input1 = document.querySelector(".mainInput1").value;
 
   items.forEach((item) => {
@@ -117,3 +117,5 @@ road.addEventListener("mouseup", () => {
   mario.src = "mario.png";
   roadMove.pause();
 });
+
+// console.log(mario);

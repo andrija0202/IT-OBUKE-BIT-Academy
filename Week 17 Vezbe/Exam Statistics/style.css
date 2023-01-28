@@ -1,0 +1,191 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.hero {
+  background-image: url(./exam-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0px;
+}
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin: auto;
+}
+
+.content-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.subheading {
+  margin-bottom: 15px;
+}
+
+/* .hero-content-wrap {
+  
+} */
+
+.hero-content-wrap p {
+  font-size: 30px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+/* .statistic-wrap {
+} */
+
+.passed {
+  background-color: #33b8b4;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  padding-right: 48px;
+  margin-bottom: 10px;
+}
+.passed p {
+  font-size: 20px;
+  color: black;
+}
+
+/* li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+} */
+
+.num-passed {
+  color: white !important;
+}
+
+.failed {
+  background-color: #fc524f;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.failed p {
+  font-size: 20px;
+  color: black;
+}
+.num-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.num-failed {
+  color: white !important;
+}
+.procent-failed {
+  font-size: 15px !important;
+  background-color: rgb(199, 150, 150);
+  padding: 2px;
+  color: white !important;
+}
+
+/* ----------------------------------------------- */
+
+/* Nav section */
+
+.nav {
+  padding: 15px;
+  background-color: gainsboro;
+}
+
+input {
+  height: 30px;
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+input:focus {
+  border: 1px solid cornflowerblue;
+  outline: none;
+}
+
+input:placeholder-shown {
+  padding: 5px 10px;
+  color: red;
+  font-size: 15px;
+}
+
+select {
+  height: 30px;
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+}
+
+.add-btn {
+  color: #33b8b4;
+  border: none;
+  background-color: transparent;
+  font-size: 25px;
+  cursor: pointer;
+  transition: color 200ms ease;
+}
+
+.add-btn:hover {
+  /* outline: 1px solid #33b8b4; */
+  color: green;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+}
+#name-input {
+  width: 350px;
+}
+
+#grade-input {
+  width: 100px;
+}
+
+.results-wrap {
+  color: black;
+  padding: 60px 0px;
+}
+.results-flex {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+}
+.results-board {
+  width: 500px;
+}
+li {
+  border-bottom: 1px solid gainsboro;
+  padding: 10px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.grade-results-passed {
+  color: #33b8b4;
+}
+
+.grade-results-failed {
+  color: #fc524f;
+}

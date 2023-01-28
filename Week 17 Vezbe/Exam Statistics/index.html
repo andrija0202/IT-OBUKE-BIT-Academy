@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Exam statistic June</title>
+  </head>
+  <body>
+    <section class="hero">
+      <div class="container content-flex">
+        <div class="hero-content-wrap">
+          <h1>Exam statistic June</h1>
+          <p class="subheading">Total students:<span class="count"></span></p>
+          <div class="statistic-wrap">
+            <div class="passed">
+              <p>PASSED</p>
+              <p class="num-passed">0</p>
+            </div>
+            <div class="failed">
+              <p>FAILED</p>
+              <div class="num-wrap">
+                <p class="num-failed">0</p>
+                <p class="procent-failed">50%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="nav">
+      <div class="nav-wrapper">
+        <div class="container">
+          <div class="nav-bar">
+            <select name="select" id="course-select">
+              <option value="javascript">JavaScript</option>
+              <option value="python">Python</option>
+              <option value="java">JAVA</option>
+            </select>
+            <input type="text" id="name-input" placeholder="Name Surname" />
+            <input type="text" id="grade-input" placeholder="Grade" />
+            <button class="add-btn">ADD</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="results-wrap">
+      <div class="container results-flex">
+        <div class="results-board">
+          <h3>PASSED</h3>
+          <ul id="items-passed">
+            <li class="item"></li>
+          </ul>
+        </div>
+        <div class="results-board">
+          <h3>FAILED</h3>
+          <ul id="items-failed">
+            <li class="item"></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="./JS/script.js"></script>
+  <script src="./JS/subject.js"></script>
+  <script src="./JS/student.js"></script>
+  <script src="./JS/exam.js"></script>
+  <script src="./JS/form.js"></script>
+  <script src="./JS/app.js"></script>
+</html>
