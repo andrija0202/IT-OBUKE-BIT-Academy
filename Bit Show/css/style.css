@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: black; */
+}
+
+img {
+  width: 100%;
+  /* max-width: 300px; */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1280px;
+  margin: auto;
+  padding: 0 24px;
+}
+
+.nav-bar {
+  background-color: blueviolet;
+  color: white;
+  padding: 15px 0;
+}
+
+.search-input-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 600;
+}
+
+#search-input {
+  width: 120px;
+  height: 20px;
+  border-radius: 5px;
+}
+
+#search-input:focus {
+  outline: none;
+}
+
+.show-list-wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding-top: 40px;
+  margin: 0px 20px;
+}
+
+.cardImg {
+  width: 300px;
+}
+
+.show-list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gray;
+  cursor: pointer;
+  transition: all ease 400ms;
+}
+
+.show-list-item:hover {
+  transform: scale(1.03);
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* ------------------------------------------ */
+/* Show Info */
+
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.movie-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.img-and-seasons {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  align-items: stretch;
+  gap: 40px;
+}
+
+.infoImg {
+  width: 50%;
+  height: auto;
+  max-height: 1200px;
+}
+
+.seasons-and-cast {
+  width: 50%;
+}
+
+.seasons-wrap {
+  width: 100%;
+}
+.seasons {
+  width: 100%;
+}
+
+.cast {
+  position: relative;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.cast .castImg {
+  display: none;
+  opacity: 0;
+  width: 150px;
+  position: absolute;
+  left: 30%;
+  transition: all ease-out 400ms;
+}
+
+.cast:hover .castImg {
+  display: block;
+  opacity: 1;
+}

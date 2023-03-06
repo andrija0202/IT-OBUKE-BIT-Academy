@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  max-width: 300px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.show-list-wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding-top: 40px;
+  margin: 0px 20px;
+}
+
+.show-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gray;
+  padding: 10px;
+  cursor: pointer;
+  transition: all ease 400ms;
+}
+
+.show-list:hover {
+  transform: scale(1.03);
+}
