@@ -1,6 +1,8 @@
+// import { useNavigate } from "react-router-dom";
+
 function ShowCard(props) {
   return (
-    <div className="card">
+    <div className="card" onClick={props.onClick}>
       <img src={props.image.original} alt="Slika ovde" className="card-img" />
       <div className="card-rating">
         <p className="rating">{props.rating.average}</p>

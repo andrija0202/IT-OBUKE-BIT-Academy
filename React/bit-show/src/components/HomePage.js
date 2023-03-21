@@ -2,12 +2,16 @@ import React from "react";
 import ShowCard from "./ShowCard";
 import { useState, useEffect } from "react";
 import Axios from "axios";
+import { useNavigate } from "react-router-dom";
+// import ShowPage from "./ShowPage";
 
 function HomePage() {
   const [showInfo, setShowInfo] = useState([]);
 
+  let navigate = useNavigate();
+
   useEffect(() => {
-    const fetch = Axios.get("http://api.tvmaze.com/shows").then((res) => {
+    Axios.get("http://api.tvmaze.com/shows").then((res) => {
       setShowInfo(res.data);
     });
   }, []);
@@ -17,8 +21,18 @@ function HomePage() {
   return (
     <div className="main container">
       {shows50.map((show) => {
+        const showId = show.id;
+        const handleShowClick = () => {
+          navigate(`/showpage/${showId}`);
+        };
         return (
-          <ShowCard title={show.name} image={show.image} rating={show.rating} />
+          <ShowCard
+            key={show.id}
+            onClick={handleShowClick}
+            title={show.name}
+            image={show.image}
+            rating={show.rating}
+          />
         );
       })}
     </div>
